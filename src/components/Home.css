@@ -1,0 +1,72 @@
+/* Home.css - Evening Horizon Theme Palette */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sapBrandColor: #d04393;
+    --sapAccentColor1: #2b78c5;
+    --sapAccentColor2: #647987;
+    --sapAccentColor3: #e54e5d;
+    --sapAccentColor4: #f0ab00;
+    --sapAccentColor5: #6c8893;
+    --sapAccentColor6: #f8f5f0;
+    --sapAccentColor7: #9c8a7b;
+    --sapAccentColor8: #7d7470;
+    --sapAccentColor9: #596366;
+    --sapShellColor: #354a5f;
+    --sapBackgroundColor: #2a3c47;
+    --sapTextColor: #ffffff;
+    --sapTile_Background: var(--sapShellColor);
+    --sapTile_Hover_Background: #283848;
+    --sapTile_Title_TextColor: var(--sapTextColor);
+    --sapTile_Content_TextColor: var(--sapTextColor);
+}
+
+.homeContainer {
+    background-color: #2a3c47;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;   
+}
+
+.card {
+    background-color: var(--sapTile_Background);
+    color: var(--sapTile_Content_TextColor);
+    width: 210px;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    background-color: var(--sapTile_Hover_Background);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.05);
+    /* Slightly enlarge the card */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.cardHeader {
+    color: var(--sapTile_Title_TextColor);
+}
+
+.cardTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.cardContent {
+    padding: 10px;
+}
